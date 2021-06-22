@@ -1,0 +1,37 @@
+[debug] [2021-06-22T13:46:22.582Z] ----------------------------------------------------------------------
+[debug] [2021-06-22T13:46:22.587Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jan_Belmar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve --only functions
+[debug] [2021-06-22T13:46:22.588Z] CLI Version:   9.13.0
+[debug] [2021-06-22T13:46:22.588Z] Platform:      win32
+[debug] [2021-06-22T13:46:22.588Z] Node Version:  v14.16.1
+[debug] [2021-06-22T13:46:22.590Z] Time:          Tue Jun 22 2021 09:46:22 GMT-0400 (hora estándar de Chile)
+[debug] [2021-06-22T13:46:22.591Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-22T13:46:22.612Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-06-22T13:46:22.612Z] > authorizing via signed-in user (jano6belmar@gmail.com)
+[debug] [2021-06-22T13:46:22.612Z] [iam] checking project my-gram-clon for permissions ["firebase.projects.get"]
+[debug] [2021-06-22T13:46:22.618Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-06-22T13:46:22.619Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T13:46:22.765Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 22 Jun 2021 13:46:25 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T13:46:22.875Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/my-gram-clon:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-06-22T13:46:23.769Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 22 Jun 2021 13:46:26 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=813","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T13:46:23.772Z] > refreshing access token with scopes: []
+[debug] [2021-06-22T13:46:23.772Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-06-22T13:46:23.858Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Tue, 22 Jun 2021 13:46:26 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-06-22T13:46:23.964Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon [none]
+[debug] [2021-06-22T13:46:24.257Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon 200
+[debug] [2021-06-22T13:46:24.258Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon {"projectId":"my-gram-clon","projectNumber":"203473920356","displayName":"My-Gram-Clon","name":"projects/my-gram-clon","resources":{"hostingSite":"my-gram-clon","storageBucket":"my-gram-clon.appspot.com","locationId":"southamerica-east1"},"state":"ACTIVE"}
+[info] +  functions: Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@14 from host."}}
+[debug] [2021-06-22T13:46:25.279Z] defaultcredentials: writing to file C:\Users\Jan_Belmar\AppData\Roaming\firebase\jano6belmar_gmail_com_application_default_credentials.json
+[debug] [2021-06-22T13:46:25.282Z] Setting GAC to C:\Users\Jan_Belmar\AppData\Roaming\firebase\jano6belmar_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Jan_Belmar\\AppData\\Roaming\\firebase\\jano6belmar_gmail_com_application_default_credentials.json"}}
+[debug] [2021-06-22T13:46:25.283Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon/adminSdkConfig [none]
+[debug] [2021-06-22T13:46:25.626Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon/adminSdkConfig 200
+[debug] [2021-06-22T13:46:25.627Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-gram-clon/adminSdkConfig {"projectId":"my-gram-clon","storageBucket":"my-gram-clon.appspot.com","locationId":"southamerica-east1"}
+[info] i  functions: Watching "D:\HealthChain\mis-proyectos\App-react-typescript\my-gram-clon\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\HealthChain\\mis-proyectos\\App-react-typescript\\my-gram-clon\\functions\" for Cloud Functions..."}}
+[debug] [2021-06-22T13:46:25.812Z] [worker-pool] addWorker(~diagnostic~) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(~diagnostic~)"}}
+[debug] [2021-06-22T13:46:25.813Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key ~diagnostic~, total=1"}}
+[debug] [2021-06-22T13:46:25.813Z] [worker-pool] submitWork(triggerId=) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=)"}}
+[debug] [2021-06-22T13:46:25.815Z] [worker-~diagnostic~-5473465c-31e8-4645-a9f0-323ae9d88362]: Assigning socketPath: \\?\pipe\D:\HealthChain\mis-proyectos\App-react-typescript\my-gram-clon\functions\9596 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-5473465c-31e8-4645-a9f0-323ae9d88362]: Assigning socketPath: \\\\?\\pipe\\D:\\HealthChain\\mis-proyectos\\App-react-typescript\\my-gram-clon\\functions\\9596"}}
+[debug] [2021-06-22T13:46:25.816Z] [worker-~diagnostic~-5473465c-31e8-4645-a9f0-323ae9d88362]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-~diagnostic~-5473465c-31e8-4645-a9f0-323ae9d88362]: BUSY"}}
